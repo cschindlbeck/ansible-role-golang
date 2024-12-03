@@ -3,6 +3,9 @@
 # Go language SDK version number
 golang_version: '1.23.3'
 
+# Go language SDK version number
+golang_architecture: armv64
+
 # Mirror to download the Go language SDK redistributable package from
 golang_mirror: 'https://storage.googleapis.com/golang'
 
@@ -14,3 +17,7 @@ golang_download_dir: "{{ x_ansible_download_dir | default(ansible_facts.env.HOME
 
 # Location for GOPATH environment variable
 golang_gopath:
+
+# Name of root owner/group
+default_owner: root
+default_group: root
